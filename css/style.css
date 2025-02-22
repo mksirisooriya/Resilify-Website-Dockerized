@@ -2063,8 +2063,8 @@ img {
 .testimonial-section .carousel-column .owl-dots .owl-dot.active,
 .testimonial-section .carousel-column .owl-dots .owl-dot:hover {
   width: 24px;
-  border-color: #ff6489;
-  background-color: #ff6489;
+  border-color: #148e83;
+  background-color: #148e83;
 }
 
 .testimonial-section .carousel-column .inner-column {
@@ -2090,7 +2090,7 @@ img {
 
 .testimonial-section .carousel-column .inner-column .quote-icon {
   position: relative;
-  color: #9f70ed;
+  color: #d4b8f2;
   font-size: 36px;
   margin: 20px 0px 25px;
 }
@@ -2734,7 +2734,7 @@ img {
 .sponsors-section {
   position: relative;
   padding: 85px 0px 60px;
-  background-color: #fbfbfb;
+  background-color: #ecf1fe;
 }
 
 .sponsors-section .owl-item {
@@ -3039,6 +3039,7 @@ img {
 .faq-section {
   position: relative;
   padding: 135px 0px 110px;
+  background-color: #ecf1fe;
 }
 
 .faq-section .sec-title {
