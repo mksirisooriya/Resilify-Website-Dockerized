@@ -4602,7 +4602,7 @@ img {
   top: 250px;
   width: 100%;
   height: 499px;
-  background: url(../images/background/5.png) repeat-x;
+  background: url(../images/background/.png) repeat-x;
 }
 
 .screenshots-section .carousel-container {
@@ -4616,7 +4616,7 @@ img {
   height: 578px;
   margin: 0 auto;
   padding: 70px 20px;
-  background: url(../images/resource/iphone-mockup.png) center top no-repeat;
+  background: url(../images/background/6mockup.png) center top no-repeat;
 }
 
 .screenshots-section .carousel-outer .owl-carousel {
@@ -4638,7 +4638,7 @@ img {
   top: 0px;
   width: 20px;
   height: 630px;
-  background: url(../images/resource/iphone-mockup.png) left top no-repeat;
+  background: url(../images/background/6mockup.png) left top no-repeat;
   z-index: 20;
 }
 
@@ -4649,7 +4649,7 @@ img {
   top: 0px;
   width: 21px;
   height: 630px;
-  background: url(../images/resource/iphone-mockup.png) right top no-repeat;
+  background: url(../images/background/6mockup.png) right top no-repeat;
   z-index: 20;
 }
 
@@ -4710,6 +4710,55 @@ img {
 .price-page-section .price-block {
   margin-bottom: 100px;
 }
+
+/*** 
+
+/*** 
+
+====================================================================
+	Price Page Section
+====================================================================
+
+***/
+
+.price-page-section {
+  position: relative;
+  padding-top: 145px;
+  padding-bottom: 80px;
+}
+
+.price-page-section .sec-title {
+  margin-bottom: 70px;
+}
+
+.price-page-section .price-block {
+  margin-bottom: 100px;
+}
+
+/*** 
+
+/*** 
+
+====================================================================
+	Price Page Section
+====================================================================
+
+***/
+
+.price-page-section {
+  position: relative;
+  padding-top: 145px;
+  padding-bottom: 80px;
+}
+
+.price-page-section .sec-title {
+  margin-bottom: 70px;
+}
+
+.price-page-section .price-block {
+  margin-bottom: 100px;
+}
+
 
 /*** 
 
