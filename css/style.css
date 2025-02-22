@@ -6124,22 +6124,54 @@ img {
 }
 
 /*** 
-
 ====================================================================
-	Contact Form
+    Contact Form
 ====================================================================
+***/
 
- ***/
+/* Center the form section */
+.contact-page-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0;
+  background-color: #ecf1fe; 
+}
 
+.form-column {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.contact-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+/* Title styling */
+.title-box {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title-box h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #262626;
+}
+
+/* Form group styling */
 .contact-form .form-group {
   position: relative;
   margin-bottom: 25px;
 }
 
 .contact-form .form-group input[type="text"],
-.contact-form .form-group input[type="password"],
-.contact-form .form-group input[type="tel"],
 .contact-form .form-group input[type="email"],
+.contact-form .form-group input[type="tel"],
+.contact-form .form-group input[type="password"],
 .contact-form .form-group select {
   position: relative;
   display: block;
@@ -6153,9 +6185,6 @@ img {
   background: none;
   border-bottom: 1px solid #bababa;
   transition: all 500ms ease;
-  -webkit-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
 }
 
 .contact-form .form-group textarea {
@@ -6172,20 +6201,33 @@ img {
   background: none;
   border-bottom: 1px solid #bababa;
   transition: all 500ms ease;
-  -webkit-transition: all 500ms ease;
-  -ms-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
 }
 
+/* Placeholder styling */
 .contact-form .form-group textarea::-webkit-input-placeholder,
 .contact-form .form-group input::-webkit-input-placeholder {
   color: #262626;
 }
 
-.contact-form .theme-btn {
-  margin-top: 10px;
+/* Button styling */
+.theme-btn.btn-style-two {
+  background: #9f70ed;
+  color: #ffffff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
+.theme-btn.btn-style-two:hover {
+  background: #8a5ed9;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Error handling */
 .contact-form input.error,
 .contact-form select.error,
 .contact-form textarea.error {
@@ -6203,75 +6245,17 @@ img {
   font-weight: 500;
 }
 
-/* Contact Info Section */
-
-.contact-info-section {
-  position: relative;
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
-.info-block {
-  position: relative;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.info-block .block-inner {
-  position: relative;
-  text-align: center;
-  display: inline-block;
-}
-
-.info-block .block-inner h3 {
-  position: relative;
-  color: #ff617d;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.info-block .block-inner ul {
-  position: relative;
-  margin-bottom: 18px;
-  padding-bottom: 18px;
-  border-bottom: 2px solid #e8e8ef;
-}
-
-.info-block .block-inner ul li {
-  position: relative;
-  color: #7f8497;
-  font-size: 15px;
-  margin-bottom: 2px;
-}
-
-.info-block .block-inner .social-icons {
-  position: relative;
-}
-
-.info-block .block-inner .social-icons a {
-  position: relative;
-  width: 38px;
-  height: 38px;
-  color: #7f8497;
-  font-size: 16px;
-  line-height: 36px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 50px;
-  margin-left: 5px;
-  margin-right: 5px;
-  border: 1px solid #d6d6d6;
-  transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-}
-
-.info-block .block-inner .social-icons a:hover {
-  background-color: #9f70ed;
-  color: #fdfff8;
-  border-color: #9f70ed;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
+/* Responsive adjustments */
+@media only screen and (max-width: 767px) {
+  .contact-form {
+      padding: 20px;
+  }
+  
+  .title-box {
+      margin-bottom: 30px;
+  }
+  
+  .title-box h2 {
+      font-size: 24px;
+  }
 }
