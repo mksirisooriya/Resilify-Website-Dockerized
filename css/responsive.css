@@ -873,6 +873,22 @@
   .news-block-two.style-two .inner-box .lower-content {
     padding: 40px 20px;
   }
+  
+  .app-section .message-box,
+    .app-section .play-box,
+    .app-section .chat-icon {
+        display: none;
+    }
+
+    .app-section .image-column .inner-column {
+        min-height: 300px;
+    }
+
+    .app-section .image {
+        position: relative;
+        margin-top: 20px;
+    }
+
 }
 
 @media only screen and (max-width: 479px) {
