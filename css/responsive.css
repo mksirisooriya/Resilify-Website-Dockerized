@@ -889,6 +889,11 @@
         margin-top: 20px;
     }
 
+    .services-section-two .services-block-two .text,
+    .services-section-two .services-block-three .text {
+        text-align: justify;
+    }
+
 }
 
 @media only screen and (max-width: 479px) {
