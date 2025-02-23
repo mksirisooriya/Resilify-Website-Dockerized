@@ -404,4 +404,15 @@
 		enableMasonry();
 	});	
 
+	// Add Navigation Active Link Handler
+    if($('.navigation li').length){
+        $('.navigation li').on('click', function() {
+            // Remove 'current' class from all links
+            $('.navigation li').removeClass('current');
+            
+            // Add 'current' class to clicked link
+            $(this).addClass('current');
+        });
+    }
+
 })(window.jQuery);
