@@ -713,18 +713,80 @@
     padding: 45px 15px;
   }
 
-  .main-menu .navbar-header .navbar-toggler {
+  .main-menu .navbar-header .navbar-toggle {
     display: inline-block;
-    z-index: 12;
-    width: 50px;
-    height: 40px;
+    z-index: 7;
+    border: 1px solid #148e83;
     float: none;
-    padding: 0px;
-    text-align: center;
+    margin: 0px 0px 0px 0px;
     border-radius: 0px;
-    background: #ff6288;
-    border: 1px solid #ff6288;
-  }
+    background: #148e83;
+}
+
+.main-menu .navbar-header .navbar-toggle .icon-bar {
+  background: #148e83;
+}
+
+/* Mobile Menu Button */
+.main-menu .navbar-header .navbar-toggler {
+  display: inline-block;
+  z-index: 12;
+  width: 50px;
+  height: 40px;
+  float: none;
+  padding: 0px;
+  text-align: center;
+  border-radius: 0px;
+  background: #148e83;
+  border: 1px solid #148e83;
+}
+
+.main-menu .navbar-header .navbar-toggler .icon-bar {
+  position: relative;
+  background: #148e83; 
+  height: 2px;
+  width: 26px;
+  display: block;
+  margin: 5px 11px;
+}
+
+/* Mobile Menu Dropdown Background */
+.main-menu .navbar-collapse > .navigation {
+  float: none !important;
+  margin: 0px !important;
+  width: 100% !important;
+  background: #fdfff8;
+  border-top: none;
+}
+
+/* Mobile Menu Items */
+.main-menu .navbar-collapse > .navigation > li > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a {
+  padding: 10px 10px !important;
+  line-height: 22px;
+  color: #148e83;
+  background: transparent;
+  text-align: left;
+  min-height: 0px;
+}
+
+/* Mobile Menu Hover States */
+.main-menu .navbar-collapse > .navigation > li:hover > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
+.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
+.main-menu .navbar-collapse > .navigation > li.current > a,
+.main-menu .navbar-collapse > .navigation > li.current-menu-item > a {
+  background: rgba(20, 142, 131, 0.1);
+  color: #148e83 !important;
+}
+
+/* Mobile Menu Border Colors */
+.main-menu .navbar-collapse > .navigation > li,
+.main-menu .navbar-collapse > .navigation > li > ul > li,
+.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li {
+  border-top: 1px solid rgba(20, 142, 131, 0.1);
+}
 
   .main-menu .navbar-header .navbar-toggler .icon-bar {
     position: relative;
@@ -887,6 +949,11 @@
     .app-section .image {
         position: relative;
         margin-top: 20px;
+    }
+
+    .services-section-two .services-block-two .text,
+    .services-section-two .services-block-three .text {
+        text-align: justify;
     }
 
 }
