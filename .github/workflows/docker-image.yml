@@ -3,16 +3,16 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main # Runs when changes are pushed to main
-      - dockerized-version # Runs when changes are pushed to dockerized-version
-      - dockerized-dev
+      - main  # Runs when changes are pushed to main
+      - dockerized-version  # Runs when changes are pushed to dockerized-version
   pull_request:
     branches:
-      - main # Runs when a pull request targets the main branch
+      - main  # Runs when a pull request targets the main branch
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -24,14 +24,9 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
 
       - name: Build Docker image
-        env:
-          WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
         run: |
-          docker build \
-            --build-arg WEB3FORMS_KEY=${WEB3FORMS_KEY} \
-            -t msirisooriya/resilify-website .
+          docker build -t msirisooriya/resilify-website .
           docker tag msirisooriya/resilify-website msirisooriya/resilify-website:latest
-
       - name: Push Docker image to Docker Hub
         run: |
           docker push msirisooriya/resilify-website:latest
