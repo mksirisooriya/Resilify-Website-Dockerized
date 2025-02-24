@@ -1651,10 +1651,6 @@ img {
   z-index: 1;
   font-weight: 600;
   text-transform: capitalize;
-}
-
-.services-block .inner-box h3 a {
-  position: relative;
   color: #444444;
 }
 
