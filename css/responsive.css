@@ -548,10 +548,6 @@
     box-shadow: none !important;
   }
 
-  .main-menu .navbar-collapse > .navigation > li > ul,
-  .main-menu .navbar-collapse > .navigation > li > ul > li > ul {
-  }
-
   .main-menu .navbar-collapse > .navigation > li,
   .main-menu .navbar-collapse > .navigation > li > ul > li,
   .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li {
