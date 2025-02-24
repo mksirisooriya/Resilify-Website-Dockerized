@@ -3,11 +3,12 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main
-      - dockerized-version
+      - main # Runs when changes are pushed to main
+      - dockerized-version # Runs when changes are pushed to dockerized-version
+      - dockerized-dev
   pull_request:
     branches:
-      - main
+      - main # Runs when a pull request targets the main branch
 
 jobs:
   build:
